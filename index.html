@@ -1,0 +1,158 @@
+<!-- 
+
+      ************************************************************
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+{   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  }
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+      ************************************************************
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="author" content="Aryan Maurya" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta
+      name="description"
+      content="This is online number guessing game build for your imporove thing skill in this domain by aryan maurya enjoy your game"
+    />
+    <meta
+      name="keywords"
+      content="number,number gussing,num guess,guess num,gussing number,number gussing game,guss game,num gussing game ,guerss num game online games,play games,online games hub, fun free, online computer, other game,color poly green shok,online dino game by aryan , aryan sir, aryan sir game"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="action.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <title>Guess The Number [GAME] </title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1><i class="fa-solid fa-trophy"></i> Guess Number <i class="fa-solid fa-trophy"></i></h1>
+            <p class="text_1">Guess any number (1-100):</p>
+            <div class="flex">
+
+                <input type="number" name="" placeholder="" id="input">
+                <Button onclick="check()">Enter</Button>
+            </div>
+            <h2 id="result">
+                <!-- <br> Try again 😛 -->
+                😀 😃 😄
+            </h2>
+            <p>You Guess: <span id="current"></span></p>
+            <p>Guesses Remaining: <span id="ramain"></span></p>
+            <p>Previous Guesses: <span id="previous"></span> </p>
+            <!-- <p>Hint: <span id="hint"></span> </p> -->
+        </div>
+        <a href="https://amsrportfolio.netlify.app">~Dev Portfolio</a>
+    </div>
+    <script>
+        let arr = [];
+        let remain = 10;
+        let num = Math.floor(Math.random() * 100);
+
+        // console.log(num);
+        function check() {
+
+            let input = document.getElementById("input").value;
+            let r = document.getElementById("ramain");
+            // for(remain=10;remain!=0;remain--){
+            //     r.innerText=remain;
+            // }
+            if (num == input) {
+                document.getElementById("result").innerText = "Great! You Won 😀";
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Great! You Won',
+                    showConfirmButton: false,
+                    timer: 1500,
+                });
+                const myTimeout = setTimeout(re, 1500);
+                function re() {
+                    location.reload();
+                }
+
+            } else if (num > input) {
+                document.getElementById("result").innerText = "You Guessed too low! 😀";
+
+            } else if (num < input) {
+                document.getElementById("result").innerText = "You Guessed too high! 😀";
+            }
+            else {
+                document.getElementById("result").innerText = "Try again 😛"
+
+            }
+            document.getElementById("current").innerText = input;
+            let remain_chance = remain - (arr.length + 1);
+            r.innerText = remain_chance;
+            let Previous = document.getElementById("previous");
+            arr.push(input);
+            // console.log(arr);
+            Previous.innerText = arr;
+            document.getElementById("input").value = "";
+            // console.log(remain_chance);
+
+            if (remain_chance == 0) {
+                // console.log("esc");
+                // alert
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: '😅 Try again',
+                    footer: '<a href="">Why do I have this issue?</a>',
+                    timer: 1500,
+                });
+
+                const myTimeout = setTimeout(re, 1500);
+                function re() {
+                    location.reload();
+                }
+                // alert("Try Again!!");
+            }
+        }
+
+    </script>
+    <script>
+        Swal.fire({
+  title: 'All the very best',
+  showConfirmButton: false,
+  timer: 1500
+})
+</script>
+</body>
+
+</html>
+
+<!-- 
+
+      ************************************************************
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+{   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  }
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+      ************************************************************
+ -->

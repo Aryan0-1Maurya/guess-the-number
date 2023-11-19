@@ -1,0 +1,102 @@
+/* 
+
+     ============================================================
+      
+          _____________   ^^^^^^^^^^    ____________________
+
+[   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  ]
+
+          _____________   ^^^^^^^^^^    ____________________
+
+     ============================================================
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://i.postimg.cc/VN2P6z6S/pexels-black-ice-1314536.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    Padding:5px;
+    Flex-direction:column;
+}
+.container{
+    padding: 30px;
+    background-color: rgba(240, 248, 255, 0.267);
+    display: inline;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.089);
+}
+i{
+    color: rgb(7, 5, 0);
+}
+input{
+    font-size: 40px;
+    display: inline;
+    width: 100px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.479);
+    border: none;
+    padding: 10px 0px 10px 10px;
+}
+input:focus{
+    outline: none;
+}
+button{
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+
+}
+H1{
+    Font-size:25px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 20px 0px;
+}
+.text_1
+{
+    padding-top: 20px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size:20px;
+    padding-bottom: 20px;
+}
+/* button{
+    
+} */
+a{
+    Padding:10px 40px;
+    background-color: rgba(255, 255, 255, 0.479);
+    Margin-top:50px;
+}
+
+/* 
+
+     ============================================================
+      
+          _____________   ^^^^^^^^^^    ____________________
+
+[   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  ]
+
+          _____________   ^^^^^^^^^^    ____________________
+
+     ============================================================
+
+*/
