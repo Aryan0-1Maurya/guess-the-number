@@ -4,7 +4,7 @@ Test your guessing skills with the classic game of Guess the Number! 🔢🎮
 
 ## Play the Game
 
-[Play Now](https://your-username.github.io/guess-the-number/) 🕹️
+[Play Now](https://aryan0-1maurya.github.io/guess-the-number/) 🕹️
 
 ## About the Game
 
